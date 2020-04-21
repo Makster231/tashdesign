@@ -1,0 +1,18 @@
+﻿body {
+  background-color: #171717;
+}
+
+*::-webkit-scrollbar {
+  width: 10px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #1f1f1f;
+  box-shadow: inset 0 0 4px rgba(183, 134, 70, 0.14);
+}
+
+*::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: #c79756;
+  box-shadow: inset 0 0 4px rgba(183, 134, 70, 0.16);
+}

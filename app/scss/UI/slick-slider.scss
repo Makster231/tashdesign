@@ -1,0 +1,104 @@
+﻿.slick-list {
+  overflow-y: visible !important;
+}
+
+.slick-dots {
+  bottom: -50px !important;
+
+  li {
+    width: 35px !important;
+    height: 2px !important;
+    background: #fff !important;
+    margin-left: 15px !important;
+
+    &:first-child {
+      margin-left: 0 !important;
+    }
+
+    &.slick-active {
+      background: #c79756 !important;
+    }
+
+    button {
+      display: none !important;
+    }
+
+    @media screen and (max-width: 640px) {
+      width: 20px !important;
+    }
+    @media screen and (max-width: 374px) {
+      width: 15px !important;
+    }
+  }
+
+  @media screen and (max-width: 640px) {
+    bottom: -35px !important;
+  }
+  @media screen and (max-width: 374px) {
+    bottom: -30px !important;
+  }
+}
+
+.slick-next,
+.slick-prev {
+  width: 50px !important;
+  height: 50px !important;
+  z-index: 9999;
+
+  &::before {
+    font-size: 50px !important;
+    border-radius: 50% !important;
+    line-height: 50px !important;
+    color: #424242 !important;
+  }
+
+  &:hover {
+    &::before {
+      color: #c79756 !important;
+    }
+  }
+
+  &:active {
+    &::before {
+      color: darken(#c79756, 20%) !important;
+    }
+  }
+}
+
+.slick-next {
+  right: -50px !important;
+
+  &::before {
+    content: "\e802" !important;
+    font-family: "fontello", sans-serif !important;
+  }
+}
+
+.slick-prev {
+  left: -50px !important;
+
+  &::before {
+    content: "\e800" !important;
+    font-family: "fontello", sans-serif !important;
+  }
+}
+
+.achievements {
+  .slick-next {
+    right: 0 !important;
+  }
+
+  .slick-prev {
+    left: 0 !important;
+  }
+
+  @media screen and (max-width: 1168px){
+    .slick-next {
+      right: -5px !important;
+    }
+  
+    .slick-prev {
+      left: -5px !important;
+    }
+  }
+}

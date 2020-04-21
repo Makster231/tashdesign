@@ -1,0 +1,134 @@
+.our-cost{
+        padding: 60px 0 100px;
+        background: #0e0e0e;
+        position: relative;
+        z-index: 5;
+        .container{
+            position: relative;
+            z-index: 5;
+        }
+        @media screen and (max-width: 960px){
+            padding: 40px 0 70px;
+        }
+        @media screen and (max-width: 640px){
+            padding-bottom: 40px;
+        }
+
+
+        h1{
+            margin-bottom: 45px;
+            
+            @media screen and (max-width: 960px){
+                margin-bottom: 30px;
+            }
+        }
+
+        h2{
+            font-family: 'Playfair Display',serif;
+            line-height: 1.45;
+            color: #ffffff;
+            font-size: 20px;
+            margin-bottom: 30px;
+            font-weight: 700;
+
+            @media screen and (max-width: 360px){
+                font-size: 18px;
+            }
+        }
+        
+        h4{
+            font-family: 'Playfair Display',serif;
+            line-height: 1.55;
+            color: #c79756;
+            font-size: 24px;
+            font-weight: 700;
+
+            @media screen and (max-width: 360px){
+                font-size: 20px;
+            }
+        }
+
+        span{
+            color: #fff;
+            font-family: 'Playfair Display',serif;
+            line-height: 1.55;
+            font-weight: 700;
+            display: block;
+            font-size: 18px;
+
+            
+            @media screen and (max-width: 960px){
+                margin-bottom: 10px;
+            }
+            @media screen and (max-width: 360px){
+                font-size: 16px;
+            }
+        }
+
+        p{
+            line-height: 1.55;
+            color: #fff;
+            font-size: 24px;
+            font-weight: 700;
+            width: 100%;
+            max-width: 260px;
+            text-align: left;
+            font-family: 'Playfair Display',serif;
+
+            
+            @media screen and (max-width: 960px){
+                font-size: 22px;
+            }
+            @media screen and (max-width: 360px){
+                font-size: 20px;
+            }
+        }
+
+
+        li{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            padding: 40px 0 25px;
+            position: relative;
+
+            &::before{
+                content: '';
+                position: absolute;
+                right: 0;
+                bottom: -1px;
+                width: 100%;
+                max-width: 50%;
+                height: 1px;
+                z-index: 9999999;
+                background: rgb(199,151,86);
+                background: -moz-linear-gradient(90deg, rgba(199,151,86,1) 50%, rgba(0,0,0,0) 100%);
+                background: -webkit-linear-gradient(90deg, rgba(199,151,86,1) 50%, rgba(0,0,0,0) 100%);
+                background: linear-gradient(90deg, rgba(199,151,86,1) 50%, rgba(0,0,0,0) 100%);
+                filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#c79756",endColorstr="#000000",GradientType=1);
+            }
+
+            &::after{
+                content: '';
+                position: absolute;
+                left: 0;
+                bottom: -1px;
+                width: 100%;
+                max-width: 50%;
+                height: 1px;
+                z-index: 9999999;
+                background: rgb(199,151,86);
+                background: -moz-linear-gradient(270deg, rgba(199,151,86,1) 50%, rgba(0,0,0,0) 100%);
+                background: -webkit-linear-gradient(270deg, rgba(199,151,86,1) 50%, rgba(0,0,0,0) 100%);
+                background: linear-gradient(270deg, rgba(199,151,86,1) 50%, rgba(0,0,0,0) 100%);
+                filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#c79756",endColorstr="#000000",GradientType=1);
+            }
+
+            @media screen and (max-width: 960px){
+                flex-direction: column;
+                align-items: self-start;
+                padding: 30px 0 20px;
+            }
+        }
+    }

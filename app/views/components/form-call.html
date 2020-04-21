@@ -1,0 +1,87 @@
+<section class="form-call " id="form-call">
+  <img
+    class="form-call-bg lazy"
+    data-src="./images/form-call-bg.png"
+    alt="form-call-bg"
+  />
+
+  <div class="container">
+    <div class="form-call-titles">
+      <h3>
+        Давайте обсудим ваш проект
+      </h3>
+
+      <h1>
+        Заполните поля &nbsp;
+        <br />
+        и мы вам перезвоним
+      </h1>
+    </div>
+
+    <form class="form-call-form" action="mail.php" method="POST">
+      <div class="form-call-content">
+        <div class="form-control">
+          <label for="form-call-name" class="d-n-d"></label>
+          <input
+            class="input-txt"
+            required
+            type="text"
+            name="name"
+            id="form-call-name"
+            placeholder="Ваше имя"
+          />
+        </div>
+        <div class="form-control">
+          <label for="form-call-phone" class="d-n-d"></label>
+          <input
+            class="input-txt"
+            type="tel"
+            data-mask="+7 (000) 000-0000"
+            minlength="17"
+            maxlength="17"
+            name="phone"
+            id="form-call-phone"
+            placeholder="Номер телефона"
+            required
+          />
+        </div>
+
+        <button type="submit" class="btn-fill gradient-bg gradient-hover">
+          Отправить
+        </button>
+      </div>
+
+      <ul class="form-checkBox form-control">
+        <li>
+          <input
+            class="input-check"
+            checked
+            required
+            type="checkbox"
+            name="form-check"
+            id="form-call-check"
+          />
+          <label for="form-call-check">
+            Я даю согласие на <span>обработку персональных данных</span> в
+            соответствии с условиями
+          </label>
+        </li>
+      </ul>
+    </form>
+
+    <div class="extra-contacts">
+      <div>
+        <p>
+          Почта для связи с нами: &nbsp;
+        </p>
+        <a href="mailto:home.lazurnaya@gmail.com">home.lazurnaya@gmail.com</a>
+      </div>
+      <div>
+        <p>
+          Номер телефона для связи с нами: &nbsp;
+        </p>
+        <a href="tel:+7 (964) 342-18-33">+7 (964) 342-18-33</a>
+      </div>
+    </div>
+  </div>
+</section>

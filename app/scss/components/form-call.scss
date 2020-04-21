@@ -1,0 +1,189 @@
+﻿.form-call {
+  padding: 110px 0;
+  background-color: #0e0e0e;
+  position: relative;
+  z-index: 5;
+  max-width: 1400px;
+  width: 100%;
+  display: block;
+  margin: 0 auto 135px;
+  overflow: hidden;
+
+  @media screen and (max-width: 1660px) and (max-height: 768px) {
+    padding: 80px 0;
+    margin-bottom: 100px;
+  }
+  @media screen and (max-width: 1366px) {
+    padding: 80px 0;
+    margin-bottom: 100px;
+  }
+
+  @media screen and (max-width: 960px) {
+    padding: 75px 0;
+    margin-bottom: 75px;
+  }
+
+  @media screen and (max-width: 640px) {
+    padding: 40px 0;
+    margin-bottom: 40px;
+  }
+
+  @media screen and (max-width: 374px) {
+    padding: 30px 0;
+    margin-bottom: 30px;
+  }
+
+  &-bg {
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: translate(30%, -43%);
+
+    @media screen and (max-width: 1660px) and (max-height: 768px) {
+      transform: translate(35%, -48%);
+    }
+    @media screen and (max-width: 1366px) {
+      transform: translate(35%, -48%);
+    }
+    @media screen and (max-width: 960px) {
+      transform: translate(35%, -53%);
+    }
+  }
+
+  h3 {
+    font-weight: 300;
+  }
+
+  h1 {
+    margin-bottom: 100px;
+
+    @media screen and (max-width: 1660px) and (max-height: 768px) {
+      margin-bottom: 75px;
+    }
+
+    @media screen and (max-width: 1366px) {
+      margin-bottom: 75px;
+    }
+    @media screen and (max-width: 960px) {
+      margin-bottom: 50px;
+    }
+  }
+
+  &-form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &-content {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 50px;
+
+    button {
+      max-width: 280px;
+    }
+
+    .form-control {
+      width: 100%;
+      max-width: 390px;
+      margin-right: 30px;
+      display: block;
+    }
+
+    @media screen and (max-width: 1660px) and (max-height: 768px) {
+      margin-bottom: 40px;
+    }
+    @media screen and (max-width: 1366px) {
+      margin-bottom: 40px;
+    }
+    @media screen and (max-width: 960px) {
+      margin-bottom: 35px;
+    }
+    @media screen and (max-width: 640px) {
+      flex-wrap: wrap;
+      margin-bottom: 25px;
+
+      .form-control {
+        max-width: 48%;
+        margin-right: 0;
+        margin-bottom: 20px;
+      }
+
+      button {
+        max-width: 100%;
+      }
+    }
+  }
+
+  .form-checkBox {
+    max-width: 100%;
+    margin-bottom: 0;
+
+    label {
+      max-width: 100%;
+    }
+  }
+
+  .extra-contacts {
+    display: flex;
+    padding: 45px 0 0;
+    width: 100%;
+    max-width: 100%;
+    flex-direction: column;
+
+    @media screen and (max-width: 640px){
+      padding-top: 25px;
+    }
+
+    div{
+      margin-bottom: 30px;
+      flex-direction: row;
+      align-items: center;
+      display: flex;
+
+      &:last-of-type{
+        margin-bottom: 0;
+      }
+
+      @media screen and (max-width: 640px){
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+
+    p,
+    a {
+      color: #fff;
+      font-size: 18px;
+      line-height: 1;
+      display: block;
+      text-align: left;
+
+      @media screen and (max-width: 640px){
+        font-size: 16px;
+      }
+    }
+
+    p{
+      @media screen and (max-width: 640px){
+        margin-bottom: 10px;
+      }
+    }
+    
+
+    a {
+      color: #c79756;
+
+      &:hover {
+        color: darken($color: #c79756, $amount: 10%);
+        text-decoration: underline !important;
+      }
+      &:active {
+        transition: 0s;
+        color: darken($color: #c79756, $amount: 20%);
+      }
+    }
+  }
+}

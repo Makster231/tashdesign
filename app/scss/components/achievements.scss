@@ -1,0 +1,32 @@
+.achievements {
+  position: relative;
+  z-index: 5;
+  padding-bottom: 90px;
+
+  h1 {
+    margin-bottom: 70px;
+  }
+
+  &-content {
+    background: #0e0e0e;
+    padding: 50px 0;
+
+    &-item {
+      display: flex !important;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+    }
+
+    picture {
+      max-width: 35%;
+      width: 100%;
+      display: block;
+      mix-blend-mode: darken;
+      img {
+        width: 100%;
+        mix-blend-mode: darken;
+      }
+    }
+  }
+}

@@ -1,0 +1,287 @@
+﻿.discuss {
+  padding: 140px 0 165px;
+  background: #171717;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+
+  @media screen and (max-width: 1660px) and (max-height: 768px) {
+    padding: 100px 0;
+  }
+
+  @media screen and (max-width: 1366px) {
+    padding: 100px 0;
+  }
+
+  @media screen and (max-width: 960px) {
+    padding: 75px 0;
+    flex-direction: column;
+  }
+  @media screen and (max-width: 640px) {
+    padding: 40px 0;
+  }
+  @media screen and (max-width: 374px) {
+    padding: 30px 0;
+  }
+
+  &-titles {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 470px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 50px !important;
+    max-width: 49% !important;
+    background-position-x: -50px;
+    overflow: visible;
+    position: relative;
+
+    &::before {
+      content: '';
+      width: 45px;
+      height: 100%;
+      left: -1%;
+      top: 0;
+      position: absolute;
+      background: url(../../images/bg-line.png) center no-repeat;
+      background-size: contain;
+      z-index: 1;
+    }
+
+    @media screen and (max-width: 1660px) and (max-height: 768px) {
+      padding-left: 45px !important;
+      background-position-x: -120px;
+
+      &::before {
+        width: 38px;
+      }
+    }
+    @media screen and (max-width: 1366px) {
+      padding-left: 45px !important;
+      background-position-x: -120px;
+      &::before {
+        width: 38px;
+      }
+    }
+    @media screen and (max-width: 960px) {
+      padding: 0 !important;
+      background: none !important;
+      height: auto;
+      &::before {
+        content: none;
+      }
+    }
+  }
+
+  h3 {
+    font-family: 'Raleway', sans-serif;
+    max-width: 620px;
+  }
+
+  h1 {
+    font-family: 'Playfair Display', serif;
+    max-width: 100%;
+    position: relative;
+    z-index: 5;
+
+    &::after {
+      content: '';
+      width: 100px;
+      height: 100px;
+      right: -10px;
+      top: -10px;
+      position: absolute;
+      background: #171717;
+      z-index: -1;
+    }
+
+    @media screen and (max-width: 1660px) and (max-height: 768px) {
+      font-size: 52px;
+    }
+    @media screen and (max-width: 1366px) {
+      font-size: 52px;
+    }
+
+    @media screen and (max-width: 960px) {
+      margin-bottom: 35px;
+      &::after {
+        content: none;
+      }
+      
+      br {
+        display: none;
+      }
+    }
+
+    @media screen and (max-width: 640px) {
+      margin-bottom: 25px;
+      font-size: 42px;
+      line-height: 1.2;
+    }
+
+    @media screen and (max-width: 410px) {
+      font-size: 38px;
+    }
+    @media screen and (max-width: 360px) {
+      font-size: 34px;
+    }
+  }
+
+  p {
+    font-size: 18px;
+    line-height: 1.4;
+    color: #fff;
+    font-family: 'Times New Roman', Times, serif;
+    width: 100%;
+    display: block;
+    max-width: 510px;
+    position: relative;
+    z-index: 5;
+
+    @media screen and (max-width: 1660px) and (max-height: 768px) {
+      font-size: 16px;
+    }
+    @media screen and (max-width: 1366px) {
+      font-size: 16px;
+    }
+    @media screen and (max-width: 960px) {
+      font-size: 15px;
+    }
+    @media screen and (max-width: 640px) {
+      font-size: 14px;
+    }
+  }
+
+
+  &-titles {
+    padding: 45px 0;
+    position: relative;
+
+    &-bg {
+      position: absolute;
+      top: 0;
+      left: -50px;
+      width: 100%;
+      height: 100%;
+      display: block;
+      background: url(../.) center no-repeat;
+      background-size: cover;
+    }
+
+    @media screen and (max-width: 1660px) and (max-height: 768px) {
+      padding: 30px 0;
+    }
+    @media screen and (max-width: 1366px) {
+      padding: 30px 0;
+    }
+    @media screen and (max-width: 960px) {
+      padding: 25px 0;
+    }
+    @media screen and (max-width: 640px) {
+      padding: 20px 0;
+    }
+  }
+
+  &-form, &-titles {
+    width: 100%;
+    max-width: 50%;
+
+    @media screen and (max-width: 960px) {
+      max-width: 100% !important;
+    }
+  }
+
+  .discuss-form {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+    input {
+      max-width: 270px;
+    }
+
+    button {
+      max-width: 165px;
+    }
+
+    .form-control {
+      width: 100%;
+      max-width: 270px;
+      margin-bottom: 40px;
+    }
+
+    .phone_input, .name_input {
+      label {
+        display: none;
+      }
+    }
+
+
+    @media screen and (max-width: 1660px) and (max-height: 768px) {
+      .form-control {
+        margin-bottom: 30px;
+      }
+    }
+    @media screen and (max-width: 1366px) {
+      .form-control {
+        margin-bottom: 30px;
+        max-width: 230px;
+      }
+    }
+    @media screen and (max-width: 960px) {
+      .form-control {
+        margin-bottom: 25px;
+        max-width: 30%;
+
+        input {
+          max-width: 100%;
+        }
+      }
+
+      .name_input {
+        order: 1;
+      }
+
+
+      .phone_input {
+        order: 2;
+      }
+
+
+      .form-checkBox {
+        order: 4;
+        max-width: 100%;
+      }
+
+      button {
+        order: 3;
+      }
+
+      p {
+        order: 5;
+        max-width: 100%;
+      }
+    }
+    @media screen and (max-width: 640px) {
+      .form-control {
+        margin-bottom: 20px;
+        max-width: 48%;
+      }
+
+      button {
+        max-width: 100% !important;
+      }
+    }
+  }
+
+}
+
+

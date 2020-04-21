@@ -1,0 +1,48 @@
+<section class='discuss container' id="discuss">
+
+
+    <div class="discuss-titles lazy" data-src='./images/bg1.png'>
+        <h3>
+            Понравились наши работы
+        </h3>
+
+        <h1>
+            Давайте обсудим <span><br/></span>
+            ваш проект!
+        </h1>
+    </div>
+
+    <form class="discuss-form" action="mail.php" method="POST">
+        <div class="form-control name_input">
+            <label for="name"></label>
+            <input class="input-txt" type="text" name="name" id="name" placeholder="Ваше имя" required>
+        </div>
+        <div class="form-control phone_input">
+            <label for="phone"></label>
+            <input class="input-txt" type="tel"
+                   data-mask="+7 (000) 000-0000"  minlength="17" maxlength="17" name="phone" id="phone" placeholder="Номер телефона" required>
+        </div>
+
+
+        <ul class="form-checkBox form-control ">
+            <li>
+                <input class="input-check" checked='checked' required type="checkbox" name="form-check" id="disc-check">
+                <label for="disc-check">
+                    Я даю согласие на <span>обработку
+                персональных данных</span> в соответствии с условиями
+                </label>
+            </li>
+        </ul>
+
+        <button class="form-control btn-fill gradient-bg gradient-hover" type="submit">
+            Отправить
+        </button>
+
+        <p>
+            Обсуждение проекта не означает начало работы: мы расскажем о себе и вариантах вопрощения ваших идей, вы -
+            примите решение о сотрудничестве. Мы за комфортную работу, основанную на доверии
+        </p>
+
+    </form>
+
+</section>

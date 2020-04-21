@@ -1,0 +1,43 @@
+﻿.bg_lines-first,
+.bg_lines-second,
+.bg_lines-third {
+  width: 100%;
+  height: 100%;
+  max-width: 1200px;
+  border: 1px solid #303030;
+  border-top: none;
+  border-bottom: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  margin: 0 auto;
+  z-index: 1;
+
+
+  @media screen and (max-width: 1366px) {
+    max-width: 992px;
+  }
+
+  @media screen and (max-width: 640px) {
+    display: none;
+  }
+}
+
+.bg_lines-second {
+  max-width: 600px;
+
+  @media screen and (max-width: 1366px) {
+    max-width: 496px;
+  }
+  @media screen and (max-width: 960px) {
+    max-width: 370px;
+  }
+}
+
+.bg_lines-third {
+  max-width: 1px;
+  left: 50%;
+  margin: 0;
+  border-right: none;
+}

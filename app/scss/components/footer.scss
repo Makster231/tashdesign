@@ -1,0 +1,141 @@
+﻿.footer {
+  background: #171717;
+  padding: 60px 0;
+
+
+  .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+
+  @media screen and (max-width: 1660px) and (max-height: 768px) {
+    padding: 40px 0;
+  }
+
+  @media screen and (max-width: 1366px) {
+    padding: 40px 0;
+  }
+
+  @media screen and (max-width: 960px) {
+    padding: 30px 0 15px;
+
+    .container {
+      flex-direction: column-reverse;
+    }
+  }
+
+  @media screen and (max-width: 640px) {
+    padding: 20px 0 5px;
+  }
+
+  * {
+    position: relative;
+    z-index: 5;
+  }
+
+
+  &-logo {
+    display: block;
+    @media screen and (max-width: 960px) {
+      order: 1;
+      margin: 0 auto 25px;
+    }
+  }
+
+  &-links {
+
+    ul {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+
+      li {
+        a {
+          font-size: 16px;
+          line-height: 1;
+          color: #fff;
+          text-decoration: none !important;
+          margin: 0 9px;
+          transition: .3s ease;
+
+          &:hover {
+            color: #b79355;
+          }
+
+          &:active {
+            color: darken(#b79355, 20%);
+          }
+        }
+      }
+
+      @media screen and (max-width: 960px) {
+        margin-bottom: 25px;
+        justify-content: space-between;
+        order: 2;
+
+        li {
+          margin-right: 0;
+
+          a {
+            margin: 0 auto;
+          }
+        }
+      }
+    }
+  }
+
+  h6 {
+    font-size: 14px;
+    line-height: 1;
+    font-family: 'Raleway', sans-serif;
+    color: #c79756;
+    margin-bottom: 15px;
+
+    @media screen and (max-width: 960px) {
+      max-width: 100%;
+      text-align: center;
+      margin-bottom: 12px;
+      font-size: 16px;
+    }
+  }
+
+  &-phone a, p {
+    font-family: 'Times New Roman', Times, serif;
+    color: #fff;
+    font-size: 16px;
+    line-height: 1;
+    text-decoration: none !important;
+    display: block;
+
+    @media screen and (max-width: 960px) {
+      max-width: 100%;
+      text-align: center;
+      margin-bottom: 25px;
+      font-size: 18px;
+    }
+    @media screen and (max-width: 410px) {
+      font-size: 16px;
+    }
+  }
+
+  &-phone {
+
+    a {
+      transition: .3s ease;
+
+      &:hover {
+        color: #b79355;
+        text-decoration: underline !important;
+      }
+
+      &:active {
+        color: darken(#b79355, 20%);
+      }
+    }
+  }
+}
+

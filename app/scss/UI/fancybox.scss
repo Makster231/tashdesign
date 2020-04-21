@@ -1,0 +1,74 @@
+﻿.fancybox-content{
+  max-width: 450px;
+  background: #121A2E;
+  border-radius: 6px;
+  box-shadow: 0 16px 38px -12px rgba(0, 0, 0, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+  h5{
+    font-size: 20px;
+    line-height: 1;
+    display: block;
+    margin: 0 auto 25px;
+    color: #fff;
+    text-align: center;
+    width: 100%;
+  }
+
+  form{
+    max-width: 95%;
+    margin: 0 auto;
+  }
+
+.fancybox-button svg{
+    color:#fff; 
+}
+
+.fancybox-content {
+    background: transparent !important;
+}
+
+.fancybox-active {
+    overflow: hidden !important;
+}
+
+.fancybox-is-open .fancybox-bg {
+    opacity: 0.995;
+}
+
+
+  label{
+    font-size: 18px;
+    line-height: 1;
+    display: block;
+    margin-bottom: 10px;
+    color: #fff;
+    text-align: left;
+    font-weight: 600;
+    width: 100%;
+  }
+  .form-control{
+    margin-bottom: 25px;
+
+    &:last-of-type{
+      margin-bottom: 35px;
+    }
+  }
+
+  .input-txt{
+    padding: 15px;
+    font-size: 16px;
+
+    &::placeholder{
+      font-size: 16px;
+    }
+  }
+
+  .btn-fill{
+    padding: 15px;
+  }
+
+ 
+}
+
+#call-popup{
+  display: none;
+}

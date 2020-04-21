@@ -1,0 +1,88 @@
+﻿.form-checkBox {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  max-width: 160px;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  position: relative;
+  z-index: 5;
+
+  @media screen and (max-width: 960px) {
+    max-width: 100% !important;
+  }
+
+
+  label {
+    font-size: 14px;
+    line-height: 18px;
+    color: #878787;
+    font-family: 'Times New Roman', Times, serif;
+    width: 100%;
+    max-width: 240px;
+    margin: 0 auto;
+    display: block;
+    position: relative;
+    padding-left: 40px;
+    cursor: pointer;
+
+    span {
+      color: #b78646;
+    }
+
+
+    @media screen and (max-width: 960px) {
+      max-width: 100% !important;
+    }
+  }
+
+  input {
+    display: none !important;
+    cursor: pointer;
+  }
+
+  input + label:before {
+    content: '';
+    display: inline-block;
+    border: 1px solid #747474;
+    line-height: 20px;
+    margin: -5px 5px 0 0;
+    width: 24px;
+    height: 24px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 0;
+    transition: font-size ease .25s;
+    color: #fff;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+
+
+  input + label:after {
+    content: '';
+    opacity: 0;
+    font-size: 10px;
+    width: 10px;
+    height: 10px;
+    line-height: 10px;
+    text-align: center;
+    background: #c79756;
+    border: 1px solid #747474;
+    margin: -5px 5px 0 0;
+    vertical-align: middle;
+    transition: all ease .1s;
+    color: #fff;
+    position: absolute;
+    transform: translate(70%, 70%);
+    left: 0;
+    top: 0;
+  }
+
+  input:checked + label:after {
+    width: 10px;
+    height: 10px;
+    opacity: 1;
+  }
+}

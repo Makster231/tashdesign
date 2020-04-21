@@ -1,0 +1,43 @@
+﻿//Bootstrap:
+@import "../../node_modules/bootstrap-scss/bootstrap-reboot.scss";
+/* purgecss start ignore */
+//Pages:
+@import "pages/thank-you";
+@import "pages/project";
+//variables:
+@import "settings/reset";
+@import "settings/grid";
+@import "settings/fontello";
+@import "settings/fontello-codes";
+//Components:
+@import "components/header";
+@import "components/aboutUs";
+@import "components/benefits";
+@import "components/services";
+@import "components/gallery";
+@import "components/discuss";
+@import "components/sequence";
+@import "components/reviews";
+@import "components/form-call";
+@import "components/instagram";
+@import "components/our-cost";
+@import "components/our-team";
+@import "components/map";
+@import "components/achievements";
+@import "components/footer";
+//UI:
+@import "UI/wrapper";
+@import "UI/body_scroll";
+@import "UI/bg-lines";
+@import "UI/input-check";
+@import "UI/slick-slider";
+@import "UI/default-classes";
+@import "UI/burger-menu";
+@import "UI/main-titles";
+@import "UI/header-slider";
+@import "UI/header-slider--nav";
+@import "UI/player";
+@import "UI/animation";
+@import "UI/fancybox";
+@import "UI/form-validate";
+/* purgecss end ignore */

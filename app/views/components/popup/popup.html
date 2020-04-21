@@ -1,0 +1,27 @@
+<div id="call-popup">
+
+    <h5>
+        Заполните форму, и мы свяжемся с вами!
+    </h5>
+
+    <form class="popup-form" action="mail.php" method="POST">
+        <div class="popup-content">
+            <div class="form-control">
+                <label for="popup-name">Ваше Имя:</label>
+                <input class="input-txt" required type="text" name="name" id="popup-name"
+                       placeholder="Ваше имя">
+            </div>
+            <div class="form-control">
+                <label for="popup-phone">Ваш Телефон:</label>
+                <input class="input-txt" type="tel"
+                       data-mask="+7 (000) 000-0000"  minlength="17" maxlength="17"
+                       name="phone" id="popup-phone" placeholder="Номер телефона" required>
+            </div>
+
+            <button type="submit" class="btn-fill gradient-bg gradient-hover">
+                Отправить
+            </button>
+        </div>
+    </form>
+
+</div>
